@@ -1,6 +1,6 @@
-// Import Firebase for Node.js
-import { initializeApp } from "firebase/app";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+// Import Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
 // Firebase Configuration
 const firebaseConfig = {
@@ -18,5 +18,17 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-// Print success message
-console.log("Firebase initialized in Node.js!");
+// Google Sign-In Function
+document.querySelector(".google_btn").addEventListener("click", () => {
+    signInWithPopup(auth, provider)
+        .then((result) => {
+            const user = result.user;
+            console.log("User signed in:", user);
+            window.location.href = "email-verification.html";  // ✅ Redirect to verification page
+        })
+        .catch((error) => {
+            console.error("Google Sign-In Error:", error);
+        });
+});
+
+console.log("Firebase initialized successfully!");
