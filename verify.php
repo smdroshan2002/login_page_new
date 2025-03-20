@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $secret = "6LciFPYqAAAAAAw85r3p26D6HmB8dW_zsZILylpb"; // Replace with your Secret Key
+    $secret = "6LeI2_UqAAAAAOjTjm8eLPJuIKkI3P8Fpzpyz4dc"; // Replace with your Secret Key
     $response = $_POST["g-recaptcha-response"];
     $remoteip = $_SERVER["REMOTE_ADDR"];
 
