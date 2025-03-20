@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white; /* Light Blue */
+    display: grid;
+    place-items: center;
+}
+
+.login_box {
+    width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input_box label {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.input_box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    transition: border 0.3s ease-in-out;
+}
+
+.input_box input:focus {
+    border: 2px solid #0288d1; /* Cyan */
+}
+
+/* Password Field with Eye Icon */
+.password_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password_container input {
+    width: 100%;
+    padding-right: 40px; /* Space for eye icon */
+}
+
+.toggle_eye {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: purple;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #01579b;
+}
+
+/* Centered "or sign in with" */
+.divider {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.google_login {
+    margin-top: 10px;
+}
+
+.google_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.google_btn img {
+    width: 20px;
+    height: auto;
+}
+
+.sign_up {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup_link {
+    color: purple;
+    font-weight: bold;
+}

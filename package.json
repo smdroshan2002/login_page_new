@@ -1,0 +1,13 @@
+{
+  "name": "login-form",
+  "version": "1.0.0",
+  "description": "A sample login form",
+  "main": "auth.js",
+  "type": "module",
+  "scripts": {
+    "start": "node auth.js"
+  },
+  "dependencies": {
+    "firebase": "^11.4.0"
+  }
+}
